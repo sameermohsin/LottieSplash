@@ -4,26 +4,24 @@ import LottieView from 'lottie-react-native';
 import {Color} from '../../color/Color';
 
 const SplashScreen = ({navigation}) => {
-  if (loading) {
-    return (
-      <SafeAreaView style={{flex: 1}}>
-        <View
-          style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: Color.white,
-          }}>
-          <LottieView
-            source={require('../../assets/moon.json')}
-            autoPlay
-            loop
-            speed={5}
-          />
-        </View>
-      </SafeAreaView>
-    );
-  }
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: Color.primaryColor,
+        }}>
+        <LottieView
+          source={require('../../assets/animation1.json')}
+          autoPlay
+          loop
+          speed={2}
+        />
+      </View>
+    </SafeAreaView>
+  );
 };
 
 export default SplashScreen;

@@ -16,7 +16,8 @@ const SplashScreen = ({navigation}) => {
         <LottieView
           source={require('../../assets/animation1.json')}
           autoPlay
-          loop
+          loop={false}
+          onAnimationFinish={() => navigation.replace('Home')}
           speed={2}
         />
       </View>

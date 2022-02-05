@@ -7,8 +7,8 @@ const HEIGHT = Dimensions.get('window').height;
 const Home = ({navigation}) => {
   return (
     <SafeAreaView style={{flex: 1}}>
-      <View>
-        <Text>Home</Text>
+      <View style={styles.container}>
+        <Text style={styles.heading}>Home</Text>
       </View>
     </SafeAreaView>
   );
@@ -16,4 +16,14 @@ const Home = ({navigation}) => {
 
 export default Home;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  heading: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+});
